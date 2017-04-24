@@ -11,15 +11,26 @@
 <a href="./index.html" > Back to Home page</a>
 
 <div class="section">
-  <h1>Project: <i>Saddle characterization</i></h1>
+  <h1>Project: <i>Saddles in Deep Learning</i></h1>
   <div class="item">
     <ol> 
       <img id="picture" src="saddle.gif" alt="" /> 
-    <li> This project characterizes the presence of saddles on Deep nerual networks</li>
-    <li> This project specifically address the issue of presence of degenerate saddles</li>
-    <li> This project studies how different gradient based methods tries to esacpe flat regions on error surfaces</li>
-	
+      <img id="picture" src="./images/contur_deg.jpg" alt="" height="500" width="700" /> 
 	</ol>  
+      <p> Convergence to local minima is well understood in the non-convex literature. Deep neural networks are also assumed to converge
+      to local minima. The proliferation of <i>Saddle points</i> increase as the dimension increases. In this work we hypothesise that
+        <ol> 
+      <li> All deep networks converge to <i>degenerate saddles</i></li>
+      <li>Good saddles are good enough</li>
+      </ol>
+      We coin a new definition <i>good saddle</i> and empirically verify that deep networks converge to them where the hessian at convergence
+      have significant number of zero eigenvalues showing flatness in many directions making gradient descent difficult to escape.       The above figure is a toy example of an error surface showing the flatness and different gradient descent algorithms work in different way to escape the flat region.
+<br> <br>
+      The source code for this project could be found <a href="https://github.com/ravisankaradepu/degenerate_saddle" > here </a> <br>
+      
+
+      </p>
+
   </div>
 </div>
 <!-- hitwebcounter Code START -->
